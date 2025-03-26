@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>极速页面</title>
+    
+    <!-- 内联关键CSS -->
+    <style>
+        *{margin:0;padding:0;box-sizing:border-box}
+        body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;line-height:1.6}
+        .container{max-width:1200px;margin:0 auto;padding:20px}
+    </style>
+    
+    <!-- 预加载关键资源 -->
+    <link rel="preconnect" href="https://example.com">
+</head>
+<body>
+    <header class="container">
+        <h1>闪电级加载速度</h1>
+    </header>
+    
+    <main class="container">
+        <!-- 使用高效的图片格式 -->
+        <img 
+            src="placeholder.webp" 
+            alt="示例图片" 
+            loading="lazy" 
+            width="800" 
+            height="450"
+            srcset="placeholder-400.webp 400w, placeholder-800.webp 800w"
+            sizes="(max-width: 600px) 400px, 800px">
+    </main>
+
+    <!-- 异步加载非关键JS -->
+    <script src="analytics.js" async></script>
+</body>
+</html>
